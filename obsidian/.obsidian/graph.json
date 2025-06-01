@@ -1,0 +1,22 @@
+{
+  "collapse-filter": false,
+  "search": "tag:#moc",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.1241,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 0.593,
+  "linkDistance": 250,
+  "scale": 1.0023859418160628,
+  "close": true
+}

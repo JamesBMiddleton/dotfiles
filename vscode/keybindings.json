@@ -1,0 +1,59 @@
+[
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "down",
+    "command": "-selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+    {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "up",
+    "command": "-selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "tab",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "j",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inEditorsPicker"
+  },
+  {
+    "key": "k",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inEditorsPicker"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.alternativeAcceptSelectedQuickOpenItem",
+    // "command": "workbench.action.duplicateActiveEditorGroupRight",
+    "when": "inQuickOpen || inEditorsPicker"  // only works on first item
+  },
+]

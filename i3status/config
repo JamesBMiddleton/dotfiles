@@ -1,0 +1,55 @@
+general {
+        colors = true
+        interval = 20
+        color_good = "#a3be8c"
+        color_degraded = "#ebcb8b"
+        color_bad = "#bf616a"
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "wireless wlp0s20f3"
+order += "ethernet eth0"
+order += "volume master"
+order += "battery 0"
+order += "tztime local"
+
+cpu_usage {
+    format = "CPU:%usage"
+}
+
+memory {
+  memory_used_method = classical
+  format="MEM:%used/%total"
+}
+
+wireless wlp0s20f3 {
+    format_up = "Wireless: UP %quality"
+    format_down = "Wireless: DOWN"
+}
+
+ethernet eth0 {
+        format_up = "Ethernet: UP"
+        format_down = "Ethernet: DOWN"
+}
+
+volume master {
+	format = "Volume: %volume"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+battery 0 {
+        format = "%status %percentage"
+        format_down = "No Battery"
+        status_chr = "Charging:"
+        status_bat = "Battery:"
+        status_unk = "Unknown"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+tztime local {
+        format = "%H:%M:%S %d/%m/%Y"
+}

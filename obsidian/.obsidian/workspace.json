@@ -1,0 +1,107 @@
+{
+  "main": {
+    "id": "f844c1cf2cffd937",
+    "type": "split",
+    "children": [
+      {
+        "id": "168a88b63cbc8dba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7ecfe6b732dcb80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/mkvim 202311041535.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85df60f37d412071",
+    "type": "split",
+    "children": [
+      {
+        "id": "5afbc6a14fbac8dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26e7fb7393c72e68",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "9f1bdb2b3b38bdb4",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true
+    }
+  },
+  "active": "d7ecfe6b732dcb80",
+  "lastOpenFiles": [
+    "Notes/mkvim 202311041535.md",
+    "Notes/nvim ide setup 202302051111.md",
+    "Notes/daily 202311111324.md",
+    "Notes/daily 202311111323.md",
+    "Notes/daily 202311111322.md",
+    "Notes/daily 202311111320.md",
+    "Notes/daily 202311111318.md",
+    "Notes/daily 202311111258.md",
+    "Notes/testfile 202311111256.md",
+    "Notes/daily 202311111256.md",
+    "Notes/daily 202311111252.md",
+    "Notes/daily 202311111241.md",
+    "Notes/things that need doing 202301271637.md",
+    "Notes/microcontroller ANN 202212081437.md",
+    "Notes/astroscale simulation engineer interview 202212081018.md",
+    "Notes/ukri grad scheme interview + test prep 202212021338.md",
+    "Notes/satellite technology - principles and application notes 202302141305.md",
+    "Notes/project ideas 202302131219.md",
+    "Notes/the essence of calculus 202212201458.md",
+    "Notes/ukri assessment day prep 202301111005.md",
+    "Notes/generic interview questions 202212081017.md",
+    "Notes/counselling options 202307282007.md",
+    "Notes/rust questions 202308281914.md",
+    "Notes/osrs snowflakes 202301291046.md",
+    "Notes/ukri dissertation presentation 202301091014.md",
+    "Notes/multithreading parallelism concurrency 202305121445.md",
+    "Notes",
+    "Files/Pasted image 20230904002028.png",
+    "Files/Pasted image 20230904001716.png",
+    "Files/Pasted image 20230904001650.png",
+    "Files/Pasted image 20230903232828.png",
+    "Files/Screenshot_20230902-154734.png",
+    "Files/Pasted image 20230219172922.png",
+    "Files/Pasted image 20230217173632.png",
+    "Files/Pasted image 20230217165248.png",
+    "Files/Pasted image 20230217165202.png",
+    "Files/Pasted image 20230217164951.png",
+    "Templates",
+    "Files"
+  ]
+}

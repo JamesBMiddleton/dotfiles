@@ -1,0 +1,74 @@
+{
+"keyboard.dispatch": "keyCode",
+"vim.leader" : "<space>",
+"vim.useSystemClipboard": true,
+"vim.normalModeKeyBindings": 
+  [
+    {
+      "before" : ["<leader>", "o"],
+      "commands" : ["workbench.action.quickOpen"],
+      "silent" : true
+    },
+    {
+      "before" : ["<leader>", "g"],
+      "commands" : ["workbench.action.replaceInFiles"],
+      "silent" : true
+    },
+    {
+      "before" : ["<leader>", "e"],
+      "commands" : ["workbench.view.explorer"],
+      "silent" : true
+    },
+    {
+      "before" : ["g", "c", "c"],
+      "commands" : ["editor.action.commentLine"],
+      "silent" : true
+    },
+    {
+      "before" : ["<leader>", "f"],
+      "commands" : ["workbench.action.showEditorsInActiveGroup", "workbench.action.quickOpenNavigateNext"],
+      "silent" : true
+    },
+    {
+      "before" : ["B", "d", "a"],
+      "commands" : ["workbench.action.closeOtherEditors"],
+      "silent" : true
+    },
+    {
+      "before" : ["g", "l"],
+      "commands" : ["editor.action.showHover"],
+      "silent" : true
+    },
+    {
+      "before" : ["g", "d"],
+      "commands" : ["editor.action.goToDeclaration"],
+      "silent" : true
+    },
+    {
+      "before" : ["g", "D"],
+      "commands" : ["editor.action.goToSourceDefinition"],
+      "silent" : true
+    },
+    {
+      "before" : ["<leader>", "r"],
+      "commands": ["editor.action.rename"],
+      "silent" : true
+    },
+    {
+      "before": ["<leader>", "E"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ],
+  "vim.visualModeKeyBindings": 
+  [
+    {
+      "before" : ["g", "c"],
+      "commands" : ["editor.action.commentLine"],
+      "silent" : true
+    }
+  ],
+  "workbench.editor.showTabs": false
+}
+
+
+
