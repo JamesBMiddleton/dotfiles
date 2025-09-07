@@ -8,7 +8,7 @@ nvim_tree.setup {
         end
         api.config.mappings.default_on_attach(bufnr)
         vim.keymap.set('n', '}', api.tree.change_root_to_node, opts('CD'))
-        vim.keymap.set('n', '{', api.tree.change_root_to_parent, opts('Up'))
+        vim.keymap.set('n', '{', api.tree.change_root_to_parent, opts('..'))
     end,
     update_focused_file = {
         enable = true,
@@ -22,26 +22,17 @@ nvim_tree.setup {
                 file = false,
                 folder = false,
                 folder_arrow = false,
-                git = true,
-            },
-            glyphs = {
-                git = {
-                    unstaged = "M", -- Modified
-                    staged = "S",
-                    unmerged = "!",
-                    renamed = "R",
-                    untracked = "U",
-                    deleted = "D",
-                    ignored = "~",
-                },
+                git = false,
             },
         },
     },
-    view = {
-        width = 25,
-    },
     git = {
         ignore = false
+    },
+    actions = {
+        open_file = {
+            quit_on_open = true
+        }
     }
 }
 
@@ -50,16 +41,14 @@ nvim_tree.setup {
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- toggle nvim-tree focus
+-- open nvim-tree
 keymap("n", "<leader>e", function()
     local api = require "nvim-tree.api"
-    if vim.fn.expand("%") == "NvimTree_1" then
-        api.tree.close()
-        api.tree.toggle(false, true)
-    else
-        api.tree.open()
-    end
+    api.tree.open({current_window = true})
 end, opts)
 
--- toggle nvim-tree
-keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
+-- close nvim-tree
+keymap("n", "<leader>E", function()
+    local api = require "nvim-tree.api"
+    api.tree.close()
+end, opts)
