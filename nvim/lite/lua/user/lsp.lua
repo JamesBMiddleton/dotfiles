@@ -20,6 +20,6 @@ require("lspconfig").clangd.setup({
     on_attach = on_attach,
 })
 
-require("lspconfig").lua_ls.setup({
+require("lspconfig").pyright.setup({
     on_attach = on_attach,
 })
