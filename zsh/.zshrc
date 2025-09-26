@@ -1,3 +1,1 @@
-
-# the '; echo' is required to remove a partial line break indicator
-bindkey -s '\e[15~' "./scripts/run.sh; echo\n"
+export MallocNanoZone=0 # suppress error from macOS libmalloc when using clang address sanitizers
