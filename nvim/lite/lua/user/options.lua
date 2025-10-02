@@ -21,7 +21,6 @@ set.ttimeout = true
 set.ttimeoutlen = 1
 set.ttyfast = true
 set.backspace = "2"
-set.guicursor = "n:ver25-2,i:block-2,v:ver25-2" -- reversed for tmux + linux TTY
 set.syntax = "on"
 set.filetype = "on"
 set.autowrite = true                                -- autosave when quitting / changing buffers
@@ -37,6 +36,13 @@ set.rulerformat = " %=%l,%c%V  %P"                  -- don't show Top/Bottom, on
 set.titlestring = "%t %m"
 set.title = true
 set.completeopt = "menu,menuone,noselect,noinsert"
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "c",
+    callback = function()
+        vim.opt_local.commentstring = "/* %s */"
+    end
+})
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
