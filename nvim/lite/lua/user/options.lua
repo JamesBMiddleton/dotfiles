@@ -37,6 +37,8 @@ set.titlestring = "%t %m"
 set.title = true
 set.completeopt = "menu,menuone,noselect,noinsert"
 
+vim.g.c_syntax_for_h = true
+
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "c",
     callback = function()
