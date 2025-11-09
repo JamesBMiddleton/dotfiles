@@ -6,6 +6,7 @@ local on_attach = function(_, bufnr)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "]g", '<cmd>lua vim.diagnostic.goto_next({ })<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "gl", '<cmd>lua vim.diagnostic.open_float({ })<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, "n", "gk", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
 end
 
 vim.diagnostic.config({
@@ -20,6 +21,6 @@ require("lspconfig").clangd.setup({
     on_attach = on_attach,
 })
 
-require("lspconfig").pyright.setup({
+require("lspconfig").lua_ls.setup({
     on_attach = on_attach,
 })
