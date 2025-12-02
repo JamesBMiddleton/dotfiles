@@ -17,6 +17,6 @@ vim.diagnostic.config({
     }
 })
 
-vim.lsp.enable({"clangd", "luals"})
+vim.lsp.enable({"clangd", "lua_ls"})
 vim.lsp.config.clangd.on_attach = on_attach
 vim.lsp.config.lua_ls.on_attach = on_attach
