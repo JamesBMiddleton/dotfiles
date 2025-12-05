@@ -1,11 +1,28 @@
-vim.cmd "colorscheme darkplus"
+vim.api.nvim_set_hl(0, "TabLine", { ctermfg = 7, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Visual", { ctermfg = 0, ctermbg = 4 })
+vim.api.nvim_set_hl(0, "Comment", { ctermfg = 7, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Type", { ctermfg = 2, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Statement", { ctermfg = 5, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Function", { ctermfg = 3, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Constant", { ctermfg = 4, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Identifier", { ctermfg = 6, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "String", { ctermfg = 1, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "PreProc", { ctermfg = 4, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Directory", { ctermfg = 4, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Pmenu", { ctermfg = 0, ctermbg = 4 })
+vim.api.nvim_set_hl(0, "PmenuSel", { ctermfg = 0, ctermbg = 6 })
+vim.api.nvim_set_hl(0, "Error", { ctermfg = "NONE", ctermbg = "NONE" })
 
-vim.cmd "hi statusline guibg=#252525 guifg=#FFFFFF"
-vim.cmd "hi tablinefill guibg=#252525 guifg=#FFFFFF"
+vim.api.nvim_set_hl(0, "cTypedef", { ctermfg = 4, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "cStructure", { ctermfg = 4, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "cStorageClass", { ctermfg = 4, ctermbg = "NONE" })
 
-vim.api.nvim_set_hl(0, 'NormalFloat', {bg='#404040'}) -- LSP float menus
-vim.api.nvim_set_hl(0, 'Pmenu', {bg='#404040'}) -- cmp autocompletion
-vim.api.nvim_set_hl(0, 'PmenuSel', {bg='#606060'}) -- cmp autocompletion
+vim.api.nvim_set_hl(0, "@variable", { ctermfg = 6, ctermbg = "NONE" })
 
--- use ':Inspect' to find highlight group of text under cursor
--- use ':Telescope highlights' to view all highlight groups
+vim.api.nvim_set_hl(0, "markdownBold", { ctermfg = 4, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "markdownItalic", { ctermfg = 6, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "markdownCode", { ctermfg = 3, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "markdownCodeBlock", { ctermfg = 3, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "markdownListMarker", { ctermfg = 7, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "markdownH2", { ctermfg = 5, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "markdownH2Delimiter", { ctermfg = 5, ctermbg = "NONE" })
