@@ -25,7 +25,7 @@ return require("packer").startup(function(use)
     use { "nvim-telescope/telescope.nvim" }
 
     -- directory tree
-    use { "kyazdani42/nvim-tree.lua" }
+        use { "stevearc/oil.nvim" }
 
     -- easier lsp language server setup
     use { "neovim/nvim-lspconfig" }
