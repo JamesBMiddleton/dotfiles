@@ -12,6 +12,7 @@ vim.api.nvim_set_hl(0, "Directory", { ctermfg = 4, ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "Pmenu", { ctermfg = 0, ctermbg = 4 })
 vim.api.nvim_set_hl(0, "PmenuSel", { ctermfg = 0, ctermbg = 6 })
 vim.api.nvim_set_hl(0, "Error", { ctermfg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Title", { ctermfg = 5, ctermbg = "NONE", bold=true })
 
 vim.api.nvim_set_hl(0, "cTypedef", { ctermfg = 4, ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "cStructure", { ctermfg = 4, ctermbg = "NONE" })
@@ -24,4 +25,11 @@ vim.api.nvim_set_hl(0, "@markup.italic", { ctermfg = 6, ctermbg = "NONE", italic
 vim.api.nvim_set_hl(0, "@markup.raw.markdown_inline", { ctermfg = 3, ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "@markup.raw.block.markdown", { ctermfg = 3, ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "@markup.list.markdown", { ctermfg = 7, ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "Title", { ctermfg = 5, ctermbg = "NONE", bold=true })
+
+vim.api.nvim_set_hl(0, "@lsp.type.typeAlias", { ctermfg = 2, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "@lsp.type.const", { ctermfg = 4, ctermbg = "NONE" })
+
+vim.api.nvim_set_hl(0, "rustSigil", { ctermfg = 7, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "rustStorage", { ctermfg = 5, ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "rustLifetime", { ctermfg = 2, ctermbg = "NONE" })
+

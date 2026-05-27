@@ -18,6 +18,7 @@ vim.diagnostic.config({
     }
 })
 
-vim.lsp.enable({"clangd", "lua_ls"})
+vim.lsp.enable({"clangd", "lua_ls", "rust_analyzer"})
 vim.lsp.config.clangd.on_attach = on_attach
 vim.lsp.config.lua_ls.on_attach = on_attach
+vim.lsp.config.rust_analyzer.on_attach = on_attach

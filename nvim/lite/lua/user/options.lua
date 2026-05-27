@@ -36,6 +36,8 @@ set.rulerformat = " %=%l,%c%V  %P"                  -- don't show Top/Bottom, on
 set.titlestring = "%t %m"
 set.title = true
 set.completeopt = "menu,menuone,noselect,noinsert"
+set.pumheight = 5
+
 
 -- C89 commentstrings
 vim.g.c_syntax_for_h = true

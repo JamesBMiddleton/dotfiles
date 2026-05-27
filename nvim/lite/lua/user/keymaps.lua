@@ -31,7 +31,7 @@ end
 
 -- smart tab show completions if available
 vim.api.nvim_create_autocmd("InsertCharPre", {
-    pattern = "*.c, *.lua",
+    pattern = {'*.rs', '*.c', '*.h', '*.lua'},
     callback = function()
         if vim.fn.pumvisible() == 0 and vim.fn.getline("."):sub(vim.fn.col(".") - 1):match("%w") then
             vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-X><C-O>", true, false, true), "n")
