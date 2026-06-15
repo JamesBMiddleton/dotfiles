@@ -17,28 +17,6 @@ keymap("n", "k", "gk", opts)
 -- lsp or ctags go-to-definition
 keymap("n", "gd", "<C-]>zt", opts)
 
--- smart tab navigate down completion list
-keymap("i", "<Tab>", "v:lua.smart_tab()", { expr = true, noremap = true })
-function _G.smart_tab()
-    if vim.fn.pumvisible() == 1 then return "<C-N>" else return "\t" end
-end
-
--- smart tab navigate up completion list
-keymap("i", "<S-Tab>", "v:lua.smart_shift_tab()", { expr = true, noremap = true })
-function _G.smart_shift_tab()
-    if vim.fn.pumvisible() == 1 then return "<C-P>" else return "\t" end
-end
-
--- smart tab show completions if available
-vim.api.nvim_create_autocmd("InsertCharPre", {
-    pattern = {'*.rs', '*.c', '*.h', '*.lua'},
-    callback = function()
-        if vim.fn.pumvisible() == 0 and vim.fn.getline("."):sub(vim.fn.col(".") - 1):match("%w") then
-            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-X><C-O>", true, false, true), "n")
-        end
-    end
-})
-
 -- better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -64,7 +42,7 @@ keymap("n", "<C-e>", "J", opts)
 keymap("v", "<C-e>", "J", opts)
 
 -- unique note creation
-keymap("n", "<C-n>", function()
+vim.api.nvim_create_user_command("UniqueNote", function()
     name = vim.fn.input("filename: ")
     if name == "" then
         name = "daily"
@@ -76,4 +54,4 @@ keymap("n", "<C-n>", function()
     template = '***\\ntags:\\nstatus: \\#atomic\\n***\\n'
     vim.cmd("silent !printf " .. "'" .. template .. "' >> " .. "'" .. filepath .. "'") 
     vim.cmd("e " .. filepath)
-end, opts)
+end, {})
