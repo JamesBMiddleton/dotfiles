@@ -38,16 +38,6 @@ set.title = true
 set.completeopt = "menu,menuone,noselect,noinsert"
 set.pumheight = 5
 
-
--- C89 commentstrings
-vim.g.c_syntax_for_h = true
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "c",
-    callback = function()
-        vim.opt_local.commentstring = "/* %s */"
-    end
-})
-
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
     callback = function()
